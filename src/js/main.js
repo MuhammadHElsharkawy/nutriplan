@@ -9,7 +9,6 @@ import { MealDetails } from "./meal-details.js";
 import { Products } from "./product.js";
 import { initHeader } from "./header.js";
 import { FoodLog } from "./foodlog.js";
-import { SweetAlert } from "./sweetalert.js";
 
 initSidebar();
 initRouter();
@@ -40,13 +39,3 @@ MD.init();
 P.init();
 initHeader();
 FL.init();
-
-document.getElementById("header").addEventListener("click", async () => {
-  // SweetAlert.showSuccessToast("product added successfully!");
-  const result = await SweetAlert.showConfirmDialog(
-    "Clear Today's Log?",
-    "This will remove all logged food items for today.",
-    "Yes, clear it!",
-  );
-  if(result.isConfirmed) console.log("تم الحذف بنجاح!");
-});
