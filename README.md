@@ -21,27 +21,36 @@ NutriPlan is a single-page web app for discovering recipes, checking packaged pr
 ## 📁 Project Structure
 
 ```
+├── node_modules/
+├── src/
+│   ├── css/
+│   │   ├── input.css
+│   │   └── output.css
+│   └── js/
+│       ├── main.js              # Entry point — initializes every module
+│       ├── Router.js            # Client-side routing (History API)
+│       ├── Sidebar.js           # Sidebar open/close behavior
+│       ├── shared.js            # Shared app state (loading flags, filters, goals)
+│       ├── EndPoints.js         # API endpoint definitions
+│       ├── meal-service.js      # Meals API calls
+│       ├── meal-service-instance.js
+│       ├── products-service.js  # Products API calls
+│       ├── product-service-instance.js
+│       ├── area.js               # Cuisine filter UI
+│       ├── category.js           # Category filter UI
+│       ├── search.js             # Debounced recipe search
+│       ├── meal.js               # Recipe grid rendering
+│       ├── meal-details.js       # Single recipe page
+│       ├── product.js            # Products page
+│       ├── foodlog.js            # Daily food log page
+│       ├── nutriplan-log.js      # Food log storage logic (localStorage)
+│       ├── sweetalert.js         # Toast/alert wrapper
+│       └── utils.js              # Small shared helpers (e.g. slugify)
+├── .gitignore
 ├── index.html              # Single HTML shell — all "pages" live here as toggled sections
-├── js/
-│   ├── main.js              # Entry point — initializes every module
-│   ├── Router.js            # Client-side routing (History API)
-│   ├── Sidebar.js           # Sidebar open/close behavior
-│   ├── shared.js            # Shared app state (loading flags, filters, goals)
-│   ├── EndPoints.js         # API endpoint definitions
-│   ├── meal-service.js      # Meals API calls
-│   ├── meal-service-instance.js
-│   ├── products-service.js  # Products API calls
-│   ├── product-service-instance.js
-│   ├── area.js               # Cuisine filter UI
-│   ├── category.js           # Category filter UI
-│   ├── search.js              # Debounced recipe search
-│   ├── meal.js                 # Recipe grid rendering
-│   ├── meal-details.js         # Single recipe page
-│   ├── product.js              # Products page
-│   ├── food-log.js             # Daily food log page
-│   ├── nutriplan-log.js        # Food log storage logic (localStorage)
-│   ├── sweetalert.js           # Toast/alert wrapper
-│   └── utils.js                # Small shared helpers (e.g. slugify)
+├── package-lock.json
+├── package.json
+├── README.md
 └── vercel.json              # SPA rewrite rule for client-side routing
 ```
 
