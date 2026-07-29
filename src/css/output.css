@@ -1774,6 +1774,11 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  @container (width >= 20rem) {
+    .\@xs\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   @container (width >= 24rem) {
     .\@sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1797,6 +1802,63 @@
   @container (width >= 56rem) {
     .\@4xl\:grid-cols-6 {
       grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+  @container (width >= 48rem) {
+    .\@3xl\:\[\&\>\:nth-child\(n\+11\)\]\:hidden > :nth-child(n+11) {
+      display: none;
+    }
+  }
+  @container (width >= 56rem) {
+    .\@4xl\:\[\&\>\:nth-child\(n\+11\)\]\:block > :nth-child(n+11) {
+      display: block;
+    }
+    .\@4xl\:\[\&\>\:nth-child\(n\+13\)\]\:hidden > :nth-child(n+13) {
+      display: none;
+    }
+  }
+  .\[\&\>\:nth-child\(n\+3\)\]\:hidden > :nth-child(n+3) {
+    display: none;
+  }
+  @container (width >= 20rem) {
+    .\@xs\:\[\&\>\:nth-child\(n\+3\)\]\:block > :nth-child(n+3) {
+      display: block;
+    }
+  }
+  @container (width >= 24rem) {
+    .\@sm\:\[\&\>\:nth-child\(n\+3\)\]\:block > :nth-child(n+3) {
+      display: block;
+    }
+  }
+  @container (width >= 20rem) {
+    .\@xs\:\[\&\>\:nth-child\(n\+5\)\]\:hidden > :nth-child(n+5) {
+      display: none;
+    }
+  }
+  @container (width >= 24rem) {
+    .\@sm\:\[\&\>\:nth-child\(n\+5\)\]\:hidden > :nth-child(n+5) {
+      display: none;
+    }
+  }
+  @container (width >= 32rem) {
+    .\@lg\:\[\&\>\:nth-child\(n\+5\)\]\:block > :nth-child(n+5) {
+      display: block;
+    }
+    .\@lg\:\[\&\>\:nth-child\(n\+7\)\]\:hidden > :nth-child(n+7) {
+      display: none;
+    }
+  }
+  @container (width >= 42rem) {
+    .\@2xl\:\[\&\>\:nth-child\(n\+7\)\]\:block > :nth-child(n+7) {
+      display: block;
+    }
+    .\@2xl\:\[\&\>\:nth-child\(n\+9\)\]\:hidden > :nth-child(n+9) {
+      display: none;
+    }
+  }
+  @container (width >= 48rem) {
+    .\@3xl\:\[\&\>\:nth-child\(n\+9\)\]\:block > :nth-child(n+9) {
+      display: block;
     }
   }
 }
