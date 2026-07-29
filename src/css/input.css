@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #00000080;
+    z-index: 35;
+    transition: 0.3s;
+    opacity: 0;
+    display: none;
+
+    &.active {
+      opacity: 1;
+      display: block;
+    }
+  }
+}
+
+.cuisines-active {
+  @apply bg-emerald-600 text-white hover:bg-emerald-700
+}
+.category-active {
+  @apply border-2 border-green-400!
+}
+
+#app-loading-overlay {
+  transition: opacity 500ms ease, visibility 0s linear 500ms;
+}
+
+#app-loading-overlay.visible {
+  transition: opacity 500ms ease, visibility 0s linear 0s;
+}
