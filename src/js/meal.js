@@ -51,7 +51,7 @@ export class Meal {
             <div class="recipe-card bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all cursor-pointer group ${isListView ? "flex flex-row h-40" : ""}"
             data-meal-id="${meal.id}">
                 <div class="relative ${isListView ? "w-48 h-full" : "h-48"} overflow-hidden">
-                    <img class="${isListView ? "max-w-full" : "w-full"} h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    <img loading="lazy" class="${isListView ? "max-w-full" : "w-full"} h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         src="${meal.thumbnail}"
                         alt="${meal.name}" loading="lazy" />
                     <div class="absolute bottom-3 left-3 flex gap-2 ${isListView ? "hidden" : ""}">

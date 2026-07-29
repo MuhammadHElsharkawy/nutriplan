@@ -118,7 +118,7 @@ export class FoodLog {
 
       const imageBox =
         item.thumbnail || item.image
-          ? `<img src="${item.thumbnail || item.image}" alt="${item.name}" class="w-12 h-12 rounded-xl object-cover" />`
+          ? `<img loading="lazy" src="${item.thumbnail || item.image}" alt="${item.name}" class="w-12 h-12 rounded-xl object-cover" />`
           : `<div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-xl flex items-center justify-center text-xl"><i class="fa-solid fa-box"></i></div>`;
 
       const subtitle = isMeal

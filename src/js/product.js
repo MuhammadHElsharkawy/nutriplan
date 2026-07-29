@@ -192,7 +192,7 @@ export class Products {
         <div class="product-card bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all cursor-pointer group"
             data-barcode="${product.barcode}">
             <div class="relative h-40 bg-gray-100 flex items-center justify-center overflow-hidden">
-                <img class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                <img loading="lazy" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     src="${product.image}"
                     alt="${product.name}" loading="lazy" />
                 ${`<div
