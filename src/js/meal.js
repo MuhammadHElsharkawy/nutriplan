@@ -1,7 +1,7 @@
 import { MS } from "./meal-service-instance.js";
 import { S } from "./shared.js";
 import { slugify } from "./utils.js";
-import { navigateTo } from "./router.js";
+import { navigateTo } from "./Router.js";
 
 export class Meal {
   mealsList;
