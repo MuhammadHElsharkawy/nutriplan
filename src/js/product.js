@@ -308,7 +308,7 @@ export class Products {
             <p class="text-4xl font-bold text-gray-900">${Math.round(product.nutrients.calories)}</p>
             <p class="text-sm text-gray-500">Calories</p>
         </div>
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div class="text-center">
                 <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
                     <div class="bg-emerald-500 h-2 rounded-full" style="width: ${S.getProgressPercentage("protein", product.nutrients.protein)}%"></div>

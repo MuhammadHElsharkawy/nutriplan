@@ -39,4 +39,10 @@ export const initSidebar = () => {
       }
     });
   });
+
+  document.querySelectorAll('.nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      closeSidebarMenu();
+    })
+  })
 };

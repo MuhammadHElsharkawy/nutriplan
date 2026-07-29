@@ -108,7 +108,7 @@
 
     <div id="main-content" class="lg:ml-72 ml-0 @container">
         <header id="header" class="bg-white border-b border-gray-200 sticky top-0 z-30">
-            <div class="px-8 py-4">
+            <div class="lg:px-8 lg:py-4 px-3 py-2">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-4 flex-1">
                         <button id="sidebar-menu-open"
@@ -120,7 +120,7 @@
                             <h1 id="page-title" class="text-2xl font-bold text-gray-900">
                                 Meals & Recipes
                             </h1>
-                            <p id="page-subtitle" class="text-sm text-gray-500 mt-1">
+                            <p id="page-subtitle" class="text-sm text-gray-500 mt-1 hidden lg:block">
                                 Discover delicious and nutritious recipes tailored for you
                             </p>
                         </div>
@@ -131,7 +131,7 @@
 
         <!-- ============= HOME SECTION ============= -->
         <div id="home">
-            <section id="search-filters-section" class="px-8 py-6 bg-white border-b border-gray-200">
+            <section id="search-filters-section" class="lg:px-8 lg:py-6 px-3 py-6 bg-white border-b border-gray-200">
                 <div class="mx-auto">
                     <div class="mb-6">
                         <div class="relative w-full">
@@ -147,7 +147,7 @@
                 </div>
             </section>
 
-            <section id="meal-categories-section" class="px-8 py-6 bg-white">
+            <section id="meal-categories-section" class="lg:px-8 lg:py-6 px-3 py-6 bg-white">
                 <div>
                     <div class="flex items-center justify-between mb-4">
                         <div>
@@ -172,7 +172,7 @@
                 </div>
             </section>
 
-            <section id="all-recipes-section" class="px-8 py-8 bg-gray-50">
+            <section id="all-recipes-section" class="lg:px-8 lg:py-8 px-3 py-8 bg-gray-50">
                 <div>
                     <div class="flex items-center justify-between mb-6">
                         <div>
@@ -202,7 +202,7 @@
         </div>
 
         <!-- ============= MEAL SECTION ============= -->
-        <section id="meal" class="px-8 py-8 bg-gray-50">
+        <section id="meal" class="lg:px-8 lg:py-8 py-6 px-3 bg-gray-50">
             <div class="max-w-7xl mx-auto">
                 <!-- Back Button -->
                 <button id="back-to-meals-btn"
@@ -261,7 +261,7 @@
                     <!-- Left Column - Ingredients & Instructions -->
                     <div class="lg:col-span-2 space-y-8">
                         <!-- Ingredients -->
-                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <div class="bg-white rounded-2xl shadow-lg p-4 lg:p-6">
                             <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                                 <i class="fa-solid fa-list-check text-emerald-600"></i>
                                 Ingredients
@@ -269,20 +269,11 @@
                                     items</span>
                             </h2>
                             <div id="meal-ingredients-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                <!-- <div
-                                    class="flex items-center gap-3 p-3 bg-gray-50 rounded-xl hover:bg-emerald-50 transition-colors">
-                                    <input type="checkbox"
-                                        class="ingredient-checkbox w-5 h-5 text-emerald-600 rounded border-gray-300" />
-                                    <span class="text-gray-700">
-                                        <span class="font-medium text-gray-900">3/4 cup</span> soy
-                                        sauce
-                                    </span>
-                                </div> -->
                             </div>
                         </div>
 
                         <!-- Instructions -->
-                        <div class="bg-white rounded-2xl shadow-lg p-6">
+                        <div class="bg-white rounded-2xl shadow-lg p-4 lg:p-6">
                             <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                                 <i class="fa-solid fa-shoe-prints text-emerald-600"></i>
                                 Instructions
@@ -292,7 +283,7 @@
                         </div>
 
                         <!-- Video Section -->
-                        <div id="meal-video-section" class="bg-white rounded-2xl shadow-lg p-6">
+                        <div id="meal-video-section" class="bg-white rounded-2xl shadow-lg p-3.5 lg:p-6">
                             <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                                 <i class="fa-solid fa-video text-red-500"></i>
                                 Video Tutorial
@@ -402,15 +393,15 @@
 
         <!-- ============= PRODUCT SCANNER SECTION ============= -->
         <div id="products">
-            <section id="products-section" class="px-8 py-8 bg-gray-50 min-h-screen">
+            <section id="products-section" class="lg:px-8 px-3 py-8 bg-gray-50 min-h-screen">
                 <div class="max-w-7xl mx-auto">
                     <!-- Search Header -->
-                    <div class="bg-linear-to-r from-emerald-600 to-teal-600 rounded-2xl p-6 mb-6 text-white">
-                        <h2 class="text-2xl font-bold mb-2">
+                    <div class="bg-linear-to-r from-emerald-600 to-teal-600 rounded-2xl lg:p-6 p-4 mb-6 text-white">
+                        <h2 class="lg:text-2xl text-xl font-bold mb-2">
                             <i class="fa-solid fa-barcode mr-2"></i>
                             Product Search & Barcode Scanner
                         </h2>
-                        <p class="opacity-90 mb-4">
+                        <p class="opacity-90 mb-4 text-sm lg:text-base">
                             Search for packaged food products to view nutrition information
                         </p>
 
@@ -418,7 +409,7 @@
                             <div class="flex-1 relative">
                                 <input type="text" id="product-search-input"
                                     placeholder="Search by product name (e.g., Cheerios, Nutella, Coca-Cola...)"
-                                    class="w-full px-5 py-3.5 pr-12 bg-white/90 backdrop-blur-sm text-gray-900 rounded-xl placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" />
+                                    class="w-full px-3 lg:px-5 py-3.5 pr-12 bg-white/90 backdrop-blur-sm text-gray-900 rounded-xl placeholder:text-sm lg:placeholder:text-base placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" />
                                 <i
                                     class="fa-solid fa-search absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
                             </div>
@@ -438,7 +429,7 @@
                             <div class="flex-1 relative">
                                 <input type="text" id="barcode-input"
                                     placeholder="Enter barcode number (e.g., 7613034626844)"
-                                    class="w-full px-5 py-3.5 pr-12 bg-white/90 backdrop-blur-sm text-gray-900 rounded-xl placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" />
+                                    class="w-full px-3 lg:px-5 py-3.5 pr-12 bg-white/90 backdrop-blur-sm text-gray-900 rounded-xl placeholder:text-sm lg:placeholder:text-base placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" />
                                 <i
                                     class="fa-solid fa-barcode absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
                             </div>
@@ -452,7 +443,7 @@
                     <!-- Nutrition Grade Filter -->
                     <div class="flex items-center gap-4 mb-6">
                         <span class="text-sm font-medium text-gray-700">Filter by Nutri-Score:</span>
-                        <div class="flex gap-2">
+                        <div class="flex gap-2 overflow-auto scrollbar-none">
                             <button
                                 class="nutri-score-filter px-4 py-2 rounded-lg text-sm font-bold transition-all bg-gray-100 text-gray-700 hover:bg-gray-200"
                                 data-grade="">
@@ -530,11 +521,11 @@
 
         <!-- ============= FOOD LOG SECTION ============= -->
         <div id="foodlog">
-            <section id="foodlog-section" class="px-8 py-8 bg-gray-50 min-h-screen">
+            <section id="foodlog-section" class="px-3 lg:px-8 py-8 bg-gray-50 min-h-screen">
                 <div class="max-w-7xl mx-auto">
                     <!-- Page Header -->
                     <div class="bg-linear-to-r from-indigo-600 to-purple-600 rounded-2xl p-6 mb-6 text-white">
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-col sm:flex-row gap-2">
                             <div>
                                 <h2 class="text-2xl font-bold mb-2">
                                     <i class="fa-solid fa-clipboard-list mr-2"></i>
@@ -694,7 +685,7 @@
     </div>
 
     <div id="log-meal-modal" class="fixed inset-0 bg-black/50 items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-2xl p-6 max-w-md w-full mx-4 relative z-60">
+        <div class="bg-white rounded-2xl p-3 lg:p-6 max-w-md w-full mx-4 relative z-60">
             <div class="flex items-center gap-4 mb-6">
                 <img src="https://www.themealdb.com/images/media/meals/40r49m1763197022.jpg"
                     alt="Kentucky Fried Chicken" class="w-16 h-16 rounded-xl object-cover">
@@ -720,7 +711,7 @@
             </div>
             <div class="bg-emerald-50 rounded-xl p-4 mb-6">
                 <p class="text-sm text-gray-600 mb-2">Estimated nutrition per serving:</p>
-                <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center">
                     <div>
                         <p class="text-lg font-bold text-emerald-600" id="modal-calories">654</p>
                         <p class="text-xs text-gray-500">Calories</p>
@@ -755,7 +746,7 @@
 
     <div id="product-detail-modal" class="fixed inset-0 bg-black/50 items-center justify-center z-50 hidden">
         <div class="bg-white rounded-2xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
-            <div class="p-6">
+            <div class="p-3 lg:p-6">
                 <div class="flex items-start gap-6 mb-6">
                     <div
                         class="w-32 h-32 bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden shrink-0">
@@ -789,14 +780,14 @@
                 <div id="product-log-nutrition"
                     class="bg-linear-to-br from-emerald-50 to-teal-50 rounded-xl p-5 mb-6 border border-emerald-200">
                     <h3 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                        <i class="text-emerald-600 fa-sollid fa-chart-pie"></i>
+                        <i class="text-emerald-600 fa-sollid fa-solid fa-chart-pie"></i>
                         Nutrition Facts <span class="text-sm font-normal text-gray-500">(per 100g)</span>
                     </h3>
                     <div class="text-center mb-4 pb-4 border-b border-emerald-200">
                         <p class="text-4xl font-bold text-gray-900">396</p>
                         <p class="text-sm text-gray-500">Calories</p>
                     </div>
-                    <div class="grid grid-cols-4 gap-4">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                         <div class="text-center">
                             <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
                                 <div class="bg-emerald-500 h-2 rounded-full" style="width: 6%"></div>
@@ -846,7 +837,10 @@
                     <button id="add-product-to-log"
                         class="flex-1 py-3 bg-emerald-600 text-white rounded-xl font-semibold hover:bg-emerald-700 transition-all"
                         data-barcode="5709152012125">
-                        <i class="mr-2 fa-solid fa-plus"></i>Log This Food
+                        <span class="hidden sm:inline-block">
+                            <i class="mr-2 fa-solid fa-plus"></i>
+                        </span>
+                        Log This Item
                     </button>
                     <button
                         class="close-product-modal flex-1 py-3 bg-gray-100 text-gray-700 rounded-xl font-semibold hover:bg-gray-200 transition-all">
